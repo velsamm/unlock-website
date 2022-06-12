@@ -1,0 +1,23 @@
+.contact-form
+  .arrow
+    %img{ :src => "../public/contacts-arrow.svg", :alt => "" }
+
+  .title
+    %span
+      Оставьте свои контакты
+
+  .subtitle
+    %span
+      Мы свяжемся с вами и поможем разблокировать ваши средства
+
+  .contact-form-content
+    %form
+      .row{ :class => "contact-form-content" }
+        .col{ :class => "grow-1" }
+          %input{ :class => "w-full  h-100", :placeholder => "ФИО" }
+        .col{ :class => "grow-1" }
+          %input{ :class => "w-full  h-100", :placeholder => "Номер телефона" }
+        .col{ :class => "grow-1" }
+          %input{ :class => "w-full  h-100", :placeholder => "Email" }
+        .col{ :class => "grow-1" }
+          %button{ :class => "btn" } Отправить
