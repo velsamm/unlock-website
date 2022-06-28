@@ -1,0 +1,20 @@
+:javascript
+  function send() {
+    const fio = document.querySelector('[name="fio"]').value
+    const phone = document.querySelector('[name="phone"]').value
+    const email = document.querySelector('[name="email"]').value
+    const source = 'unlock'
+
+    const xmlHttpBuilder = new XMLHttpRequest()
+        xmlHttpBuilder.open('post', '/send')
+        xmlHttpBuilder.setRequestHeader('Content-Type', 'application/json')
+        const payload = JSON.stringify({ name: fio, phone, email, source })
+        xmlHttpBuilder.send(payload)
+        xmlHttpBuilder.onload = function () {
+            if (xmlHttpBuilder.status !== 200) {
+                alert('Ошибка при отправке заявки')
+            } else {
+                alert('Заявка принята успешно')
+            }
+        }
+  }

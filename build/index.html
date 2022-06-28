@@ -808,8 +808,30 @@
   }
 </style>
 
+<script>
+  function send() {
+    const fio = document.querySelector('[name="fio"]').value
+    const phone = document.querySelector('[name="phone"]').value
+    const email = document.querySelector('[name="email"]').value
+    const source = 'unlock'
+  
+    const xmlHttpBuilder = new XMLHttpRequest()
+        xmlHttpBuilder.open('post', '/send')
+        xmlHttpBuilder.setRequestHeader('Content-Type', 'application/json')
+        const payload = JSON.stringify({ name: fio, phone, email, source })
+        xmlHttpBuilder.send(payload)
+        xmlHttpBuilder.onload = function () {
+            if (xmlHttpBuilder.status !== 200) {
+                alert('Ошибка при отправке заявки')
+            } else {
+                alert('Заявка принята успешно')
+            }
+        }
+  }
+</script>
+
 </head>
-<body></body>
+<body>
 <header class='row justify-content-space-between align-items-center'>
 <div class='col'>
 <img alt='logo' src='../public/logo.svg'>
@@ -1198,22 +1220,20 @@
 </span>
 </div>
 <div class='contact-form-content'>
-<form>
 <div class='row contact-form-content'>
 <div class='col grow-1'>
-<input class='w-full  h-100' placeholder='ФИО'>
+<input class='w-full  h-100' name='fio' placeholder='ФИО'>
 </div>
 <div class='col grow-1'>
-<input class='w-full  h-100' placeholder='Номер телефона'>
+<input class='w-full  h-100' name='phone' placeholder='Номер телефона'>
 </div>
 <div class='col grow-1'>
-<input class='w-full  h-100' placeholder='Email'>
+<input class='w-full  h-100' name='email' placeholder='Email'>
 </div>
 <div class='col grow-1'>
-<button class='btn'>Отправить</button>
+<button class='btn' onclick='send()'>Отправить</button>
 </div>
 </div>
-</form>
 </div>
 </div>
 
@@ -1244,4 +1264,5 @@
 </div>
 </footer>
 
+</body>
 </html>
