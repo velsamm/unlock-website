@@ -1,19 +1,16 @@
-.d-flex
-  .result{ :class => "grow-1" }
+.result-container
+  .result-item{ :class => "grow-1" }
     .clocks-icon
       %img{ :src => "../public/clocks.svg", :alt => "" }
-    %div{ :class => "num" }
+    .num
       %span От 5 до 30 дней
-    %div{ :class => "title" }
+    .title
       %span Сроки оказания услуг
 
-  .result{ :class => "grow-2" }
+  .result-item{ :class => "grow-2" }
     .check-icon
       %img{ :src => "../public/check.svg", :alt => "" }
-    %div{ :class => "num" }
+    .num
       %span Платите за результат
-    %div{ :class => "title" }
+    .title
       %span В случае отказа в разблокировке аккаунта мы вернем оплату за услуги в 100% размере
-
-
-

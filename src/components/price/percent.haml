@@ -1,6 +1,6 @@
-.d-flex
-  .percent{ :class => "grow-2" }
-    .percent-icon
+.percent-container
+  .percent-item{ :class => "grow-2" }
+    .icon
       %img{ :src => "../public/percent.svg", :alt => "" }
 
     %div{ :class => "num" }
@@ -10,7 +10,7 @@
     %div{ :class => "subtitle" }
       %span *от заблокированной суммы на аккаунте в зависимости от сложности работ
 
-  .percent{ :class => "grow-1" }
+  .percent-item{ :class => "grow-1" }
     %div{ :class => "num" }
       %span от $70
     %div

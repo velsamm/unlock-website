@@ -3,11 +3,13 @@
     %span{ :class => "title" }
       Разблокируем доступ к средствам  на криптовалютных биржах и банковских счетах
 
-  %div{ :class => "title-action" }
+  %div{ :class => "title-action relative" }
     %a{ :class => "btn-a", :href => "#contact" } Оставить заявку
 
-  %div{ :class => "image-man-on-pc" }
-    %img{ :src => "../public/ManOnPC.svg", :alt => "" }
+    %div{ :class => "image-man-on-pc" }
+      %img{ :src => "../public/ManOnPC.svg", :alt => "" }
+
+
 
   = Haml::Engine.new(File.read("src/components/who-works.haml")).render
   = Haml::Engine.new(File.read("src/components/help-with.haml")).render
