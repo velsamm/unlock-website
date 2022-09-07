@@ -16,6 +16,7 @@
     --radius: 20px;
     --button-text: rgba(255, 255, 255, 1);
     --button-background: rgba(31, 31, 31, 1);
+    --button-background-telegram: #0088cc;
     --button-radius: 60px;
   }
   
@@ -109,6 +110,10 @@
     flex-grow: 2;
   }
   
+  .gap-10 {
+    gap: 10px;
+  }
+  
   .flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -152,7 +157,7 @@
   }
   
   .title-action {
-    margin-bottom: 143px;
+    margin-bottom: 53px;
   }
   
   .image-man-on-pc {
@@ -487,14 +492,29 @@
   }
   
   .btn-a {
+    background-color: var(--button-background);
+  }
+  
+  .btn-telegram {
+    background-color: var(--button-background-telegram);
+  }
+  
+  .btn-e-mail {
+    background-color: var(--button-background-telegram);
+  }
+  
+  .btn-a, .btn-telegram, .btn-e-mail {
+    height: 32px;
+    padding: 20px 40px;
+    width: calc(100% - 80px);
+    color: var(--button-text);
     text-decoration: none;
     cursor: pointer;
-    width: 222px;
-    height: 61px;
-    padding: 20px 40px;
     border-radius: var(--button-radius);
-    background-color: var(--button-background);
-    color: var(--button-text);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .tg {
@@ -679,18 +699,6 @@
       top: 12%;
     }
   
-    .title-action {
-      margin-bottom: 323px;
-    }
-  
-    .image-man-on-pc {
-      display: block;
-      position: absolute;
-      right: 60px;
-      top: -300%;
-      z-index: 1;
-    }
-  
     .about {
       flex-direction: row;
       text-align: left;
@@ -698,6 +706,15 @@
   }
   
   @media (min-width: 1200px) {
+  
+    .title-action {
+      margin-bottom: 123px;
+    }
+  
+    .btn-a, .btn-telegram, .btn-e-mail {
+      width: 250px;
+    }
+  
     .contact-form-content {
       flex-direction: row;
     }
@@ -717,6 +734,14 @@
   
     .help-left: {
       padding-right: 150px;
+    }
+  
+    .image-man-on-pc {
+      display: block;
+      position: absolute;
+      right: 60px;
+      top: -50%;
+      z-index: 1;
     }
   
     .coins {
@@ -858,7 +883,13 @@
 </span>
 </div>
 <div class='title-action relative'>
-<a class='btn-a' href='#contact'>Оставить заявку</a>
+<div class='d-flex column gap-10'>
+<a class='btn-a' href='#contact'>
+<span>Оставить заявку на сайте</span>
+</a>
+<a class='btn-telegram' href='https://t.me/un_lock_site'>Оставить заявку в Telegram</a>
+<a class='btn-e-mail' href='mailto:un-locksite@yandex.ru'>Оставить заявку по e-mail</a>
+</div>
 <div class='image-man-on-pc'>
 <img alt='' src='../public/ManOnPC.svg'>
 </div>
@@ -1185,7 +1216,7 @@
 </span>
 </div>
 <div class='btn-container'>
-<a class='btn-a' href=''>Подписаться</a>
+<a class='btn-a' href='https://t.me/unlock_site'>Подписаться</a>
 </div>
 </div>
 <div class='col questions'>
