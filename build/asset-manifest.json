@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.db20114b.css",
+    "main.js": "/static/js/main.51a3743a.js",
+    "static/media/ManOnPC.svg": "/static/media/ManOnPC.2e8abcc0d680dfecde38512552e1dda8.svg",
+    "static/media/notes.svg": "/static/media/notes.03c9726027dd9cd3a4d5645bbe85a6ab.svg",
+    "static/media/check.svg": "/static/media/check.31803979b69cde895e7ef60d34c655c3.svg",
+    "static/media/OrangePerson.svg": "/static/media/OrangePerson.0d9fdf476b2614547dfb7b000ba41876.svg",
+    "static/media/contacts-arrow.svg": "/static/media/contacts-arrow.d2cdbb7f4a730e314760cf1e8601a8d5.svg",
+    "static/media/PurplePerson.svg": "/static/media/PurplePerson.08b65116542db7c90eb00b8c9dc83772.svg",
+    "static/media/logo.svg": "/static/media/logo.9521e6b8931478474743fbb348190d5d.svg",
+    "static/media/coins.svg": "/static/media/coins.010dbd143b6137590384fa047c6fb83e.svg",
+    "static/media/HandShake.svg": "/static/media/HandShake.80e07aee7de58be9d0990bdcbc6be1d2.svg",
+    "static/media/LinesDots.svg": "/static/media/LinesDots.aabfa391415ef0ea0454d2e92bd3c7a3.svg",
+    "static/media/percent.svg": "/static/media/percent.4a63a5e747d5388fa412e6fc5f6dc91a.svg",
+    "static/media/star-2.svg": "/static/media/star-2.fa8e813957923c7aa57d3b9831497ea5.svg",
+    "static/media/Key.svg": "/static/media/Key.0d3342586332e0170cd825edcd3be8a4.svg",
+    "static/media/clocks.svg": "/static/media/clocks.27c9a39b07be2007155ae0c923e88c73.svg",
+    "index.html": "/index.html",
+    "static/media/star.svg": "/static/media/star.fbfd2690040f340888f55fbbc7b30ec1.svg",
+    "main.db20114b.css.map": "/static/css/main.db20114b.css.map",
+    "main.51a3743a.js.map": "/static/js/main.51a3743a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db20114b.css",
+    "static/js/main.51a3743a.js"
+  ]
+}
