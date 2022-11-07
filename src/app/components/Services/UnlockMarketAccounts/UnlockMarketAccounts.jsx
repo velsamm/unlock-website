@@ -4,10 +4,10 @@ export const UnlockMarketAccounts = () => {
     return (
         <div className="row service-market">
             <div className="col column help-left">
-                <span className="help-subtitle">
+                <h2 className="help-subtitle">
                     С разблокировкой аккаунтов на криптовалютных биржах и
                     онлайн-сервисах:
-                </span>
+                </h2>
                 <div className="d-flex justify-content-flex-end align-items-center">
                     <div className="coins">
                         <img src={String(CoinsPic)} alt="coinsPic" />

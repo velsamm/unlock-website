@@ -154,6 +154,7 @@ header .nav {
 
 .landing .title {
     font-size: var(--font-size-title-mobile);
+    font-weight: 400;
 }
 
 .title-action {
@@ -284,6 +285,7 @@ header .nav {
 .help-subtitle {
     font-size: 36px;
     line-height: 42px;
+    font-weight: 400;
 }
 
 /*.service-bank {*/

@@ -16,10 +16,10 @@ function App() {
             <Header />
             <main>
                 <div className="landing">
-                    <span className="title">
+                    <h1 className="title">
                         Разблокируем доступ к средствам на криптовалютных биржах
                         и банковских счетах
-                    </span>
+                    </h1>
                 </div>
                 <div className="title-action relative">
                     <div className="d-flex column gap-10">

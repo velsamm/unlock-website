@@ -3,9 +3,9 @@ import notesPic from 'src/assets/icons/svg/notes.svg'
 export const UnlockBankAccounts = () => {
     return <div className="row service-bank">
         <div className="col column help-left d-flex">
-    <span className="help-subtitle">
+    <h2 className="help-subtitle">
       С разблокировкой банковских счетов физических лиц:
-    </span>
+    </h2>
             <div className="d-flex justify-content-flex-end align-items-center notes">
                 <img src={String(notesPic)} alt="notesPic" />
             </div>
