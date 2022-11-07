@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import manOnPcPic from 'src/assets/icons/svg/ManOnPC.svg'
 import { WhoWorks } from 'src/app/components/WhoWorks/WhoWorks'
 import { HelpWith } from 'src/app/components/HelpWith/HelpWith'
@@ -11,9 +12,25 @@ import { Footer } from 'src/app/components/Footer/Footer'
 import 'src/index.css'
 
 function App() {
+    const pricesRef = useRef(null)
+    const advantagesRef = useRef(null)
+    const servicesRef = useRef(null)
+    const contactRef = useRef(null)
+
+    const scrollToPrices = () => pricesRef?.current.scrollIntoView({ behavior: 'smooth' })
+    const scrollToAdvantages = () => advantagesRef?.current.scrollIntoView({ behavior: 'smooth' })
+    const scrollToServices = () => servicesRef?.current.scrollIntoView({ behavior: 'smooth' })
+    const scrollToContactForm = () => contactRef?.current.scrollIntoView({ behavior: 'smooth' })
+
+    const scroller = {
+        scrollToPrices,
+        scrollToAdvantages,
+        scrollToServices
+    }
+
     return (
         <>
-            <Header />
+            <Header scroller={scroller} />
             <main>
                 <div className="landing">
                     <h1 className="title">
@@ -23,9 +40,9 @@ function App() {
                 </div>
                 <div className="title-action relative">
                     <div className="d-flex column gap-10">
-                        <a className="btn-a" href="#contact">
-                            <span>Оставить заявку на сайте</span>
-                        </a>
+                        <p className="btn-a" onClick={scrollToContactForm}>
+                            Оставить заявку на сайте
+                        </p>
                         <a
                             className="btn-telegram"
                             href="https://t.me/un_lock_site"
@@ -44,15 +61,23 @@ function App() {
                     </div>
                 </div>
 
+                <div ref={advantagesRef} />
                 <WhoWorks />
                 <HelpWith />
 
                 <div className="services" />
 
+                <div ref={servicesRef} />
                 <UnlockServices />
+
                 <HowWeWork />
+
+                <div ref={pricesRef} />
                 <Price />
+
                 <TG />
+
+                <div ref={contactRef} />
                 <ContactForm />
 
                 <Footer />

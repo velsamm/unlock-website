@@ -142,6 +142,7 @@ header .nav {
     text-decoration: none;
     color: var(--text-color);
     padding-right: 60px;
+    cursor: pointer;
 }
 
 .page-link:last-child {
@@ -508,6 +509,7 @@ header .nav {
 .btn-a, .btn-telegram, .btn-e-mail {
     height: 32px;
     padding: 20px 40px;
+    margin: 0;
     width: calc(100% - 80px);
     color: var(--button-text);
     text-decoration: none;

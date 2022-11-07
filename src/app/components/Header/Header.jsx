@@ -1,6 +1,6 @@
 import Logo from 'src/assets/icons/svg/logo.svg'
 
-export const Header = () => (
+export const Header = ({ scroller }) => (
     <header className="row justify-content-space-between align-items-center">
         <div className="col">
             <img src={String(Logo)} alt="logo" />
@@ -8,19 +8,25 @@ export const Header = () => (
         <div className="col grow-0">
             <div className="row justify-content-flex-end flex-nowrap nav">
                 <div className="col ta-center">
-                    <a className="page-link" href="#advantages">
+                    <span className="page-link"  onClick={() => {
+                        scroller.scrollToAdvantages()
+                    }}>
                         Преимущества
-                    </a>
+                    </span>
                 </div>
                 <div className="col ta-center">
-                    <a className="page-link" href="#services">
+                    <span className="page-link" onClick={() => {
+                        scroller.scrollToServices()
+                    }}>
                         Услуги
-                    </a>
+                    </span>
                 </div>
                 <div className="col ta-center">
-                    <a className="page-link" href="#price">
+                    <span className="page-link" onClick={() => {
+                        scroller.scrollToPrices()
+                    }}>
                         Стоимость
-                    </a>
+                    </span>
                 </div>
             </div>
         </div>
