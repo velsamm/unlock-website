@@ -17,7 +17,7 @@ export const WhoWorks = () => {
             </div>
             <div className="col who-work-text">
                 <span>
-                    В штате Unlock работают профессиональные юристы с опытом
+                    В штате BZ Pravo работают профессиональные юристы с опытом
                     работы более 10 лет в областях KYC/AML, Fintech и банковской
                     сферы
                 </span>

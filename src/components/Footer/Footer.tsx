@@ -1,11 +1,10 @@
-import Logo from '$assets/icons/svg/logo.svg'
-import Image from "next/image";
+import { Logo } from "$components/Logo/logo";
 
 export const Footer = () => {
     return (
         <footer className="row about">
             <div className="col grow-2">
-                <Image src={Logo} alt="logo" />
+                <Logo />
             </div>
             <div className="col">
                 <ul>

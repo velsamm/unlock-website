@@ -6,7 +6,7 @@ export const TG = () => {
                     <div>
                         <span>
                             Еженедельно наши подписчики получают полезную
-                            информацию в Телеграм-канале Unlock
+                            информацию в Телеграм-канале BZ Pravo
                         </span>
                     </div>
                     <div className="btn-container">
