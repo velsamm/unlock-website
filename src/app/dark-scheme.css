@@ -1,0 +1,18 @@
+:root[data-theme="dark"] {
+    --text-color: #c5c6c7;
+    --text-color_triplet: 197, 198, 199;
+    --text-color-white: rgba(255, 255, 255, 1);
+    --text-color-inverse: #1a1a1a;
+    --border-color: #66FCF1;
+    --circle-color: #66FCF1;
+    --font-size-title: 60px;
+    --font-size-title-mobile: 36px;
+    --services-background: #1f2833;
+    --radius: 20px;
+    --button-text: rgba(255, 255, 255, 1);
+    --button-background: #45a29e;
+    --button-background-hover: #44b2ae;
+    --button-background-telegram: #0088cc;
+    --button-radius: 60px;
+    --background-color: #0b0c10;
+}

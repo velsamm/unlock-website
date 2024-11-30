@@ -10,7 +10,7 @@ export const TG = () => {
                         </span>
                     </div>
                     <div className="btn-container">
-                        <a className="btn-a" href="https://t.me/unlock_site">
+                        <a className="btn" href="https://t.me/bzpravo">
                             Подписаться
                         </a>
                     </div>

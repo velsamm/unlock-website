@@ -24,50 +24,53 @@ export const ContactForm = () => {
     // }, [])
 
     return (
-        <div className="contact-form">
-            <div className="arrow">
-                <Image src={contactsPic} alt='contactsPic' />
-            </div>
-            <div className="title">
-                <span>Оставьте свои контакты</span>
-            </div>
-            <div className="subtitle">
+      <div className="contact-form">
+          {/*<div className="arrow">*/}
+          {/*    <Image src={contactsPic} alt='contactsPic' />*/}
+          {/*</div>*/}
+          {/*<div className="title">*/}
+          {/*    <span>Оставьте свои контакты</span>*/}
+          {/*</div>*/}
+          <div className="title">
                 <span>
                     Мы свяжемся с вами и поможем разблокировать ваши средства
                 </span>
-            </div>
-            <div className="d-flex gap-10 contact-form-content">
-                <div className="col grow-1 contact-form-content-inner">
-                    <input
-                        className="w-full h-100"
-                        placeholder="ФИО"
-                        name="fio"
-                    />
-                </div>
-                <div className="col grow-1 contact-form-content-inner">
-                    <input
-                        className="w-full h-100"
-                        placeholder="Номер телефона"
-                        name="phone"
-                    />
-                </div>
-                <div className="col grow-1 contact-form-content-inner">
-                    <input
-                        className="w-full h-100"
-                        placeholder="Email"
-                        name="email"
-                    />
-                </div>
-                <div className="col grow-1">
-                    {/*<button className="btn" onClick={handleForm}>*/}
-                    {/*    Отправить*/}
-                    {/*</button>*/}
-                    <button className="btn">
-                        Отправить
-                    </button>
+          </div>
 
-                </div>
-            </div>
-        </div>
+          <div className="col grow-1 contact-form-content-inner">
+              <input
+                className="w-full h-100"
+                placeholder="ФИО"
+                name="fio"
+              />
+          </div>
+          <div className="col grow-1 contact-form-content-inner">
+              <input
+                className="w-full h-100"
+                placeholder="Номер телефона"
+                name="phone"
+              />
+          </div>
+          <div className="col grow-1 contact-form-content-inner">
+              <input
+                className="w-full h-100"
+                placeholder="Email"
+                name="email"
+              />
+          </div>
+          <div className="col grow-1">
+              {/*<button className="btn" onClick={handleForm}>*/}
+              {/*    Отправить*/}
+              {/*</button>*/}
+              <button className="btn">
+                  Отправить
+              </button>
+
+          </div>
+
+          {/*<div className="d-flex column gap-10">*/}
+
+          {/*</div>*/}
+      </div>
     )
 }

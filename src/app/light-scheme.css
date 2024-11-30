@@ -1,0 +1,17 @@
+:root[data-theme="light"] {
+    --text-color: rgba(31, 31, 31, 1);
+    --text-color_triplet: 31, 31, 31;
+    --text-color-white: rgba(255, 255, 255, 1);
+    --border-color: rgba(31, 31, 31, 1);
+    --circle-color: rgba(31, 31, 31, 1);
+    --font-size-title: 60px;
+    --font-size-title-mobile: 36px;
+    --services-background: rgba(255, 255, 255, 1);
+    --radius: 20px;
+    --button-text: rgba(255, 255, 255, 1);
+    --button-background: rgba(31, 31, 31, 1);
+    --button-background-hover: rgba(31, 31, 31, 1);
+    --button-background-telegram: #0088cc;
+    --button-radius: 60px;
+    --background-color: #E5E5E5;
+}
