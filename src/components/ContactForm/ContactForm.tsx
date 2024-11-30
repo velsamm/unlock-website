@@ -1,6 +1,4 @@
-import Image from "next/image";
-// import { useCallback } from "react";
-import contactsPic from '$assets/icons/svg/contacts-arrow.svg'
+
 
 export const ContactForm = () => {
     // const handleForm = useCallback(() => {

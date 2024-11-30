@@ -23,7 +23,7 @@ export const Logo: FC = () => {
 	}, [updateTheme])
 
 	useEffect(() => {
-		const callback = (mutationList: any, observer: any) => {
+		const callback: MutationCallback = (mutationList) => {
 			for (const mutation of mutationList) {
 				if (mutation.type === "attributes" && mutation.attributeName === 'data-theme') {
 					console.log(`The ${mutation.attributeName} attribute was modified.`);
@@ -34,7 +34,7 @@ export const Logo: FC = () => {
 		const observer = new MutationObserver(callback);
 		const config = { attributes: true, childList: true, subtree: true };
 		const node = document.querySelector('html');
-		observer.observe(node, config);
+		observer.observe(node!, config);
 
 		return () => {
 			observer.disconnect();
