@@ -4,7 +4,7 @@ import { Result } from '$components/Price/Result'
 export const Price = () => {
     return (
         <>
-            <div className="price">
+            <div className="mt-20 mb-10 text-6xl">
                 <span>Стоимость наших услуг</span>
             </div>
 

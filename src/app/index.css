@@ -301,12 +301,12 @@ ul {
 /*    font-size: var(--font-size-title);*/
 /*}*/
 
-/*.how-we-work-item {*/
-/*    padding: 24px;*/
-/*    background-color: var(--services-background);*/
-/*    border-radius: var(--radius);*/
-/*    margin-bottom: 40px;*/
-/*}*/
+.how-we-work-item {
+    /*padding: 24px;*/
+    background-color: var(--services-background);
+    border-radius: var(--radius);
+    /*margin-bottom: 40px;*/
+}
 
 /*.how-we-work-item .num {*/
 /*    font-weight: 500;*/
@@ -347,16 +347,16 @@ ul {
 /*    flex-direction: column;*/
 /*}*/
 
-/*.percent-item {*/
-/*    !*border: 2px solid var(--border-color);*!*/
-/*    !*padding: 24px;*!*/
-/*    !*border-radius: var(--radius);*!*/
-/*    margin-bottom: 60px;*/
+.percent-item {
+    /*border: 2px solid var(--border-color);*/
+    /*padding: 24px;*/
+    /*border-radius: var(--radius);*/
+    /*margin-bottom: 60px;*/
 
-/*    padding: 24px;*/
-/*    background-color: var(--services-background);*/
-/*    border-radius: var(--radius);*/
-/*}*/
+    padding: 24px;
+    background-color: var(--services-background);
+    border-radius: var(--radius);
+}
 
 /*.percent-item:last-child {*/
 /*    margin-bottom: 0;*/
@@ -382,11 +382,11 @@ ul {
 /*    color: rgba(var(--text-color_triplet), 0.5);*/
 /*}*/
 
-/*.percent-item .icon {*/
-/*    position: absolute;*/
-/*    left: 57%;*/
-/*    margin-top: -65px;*/
-/*}*/
+.percent-item .icon {
+    position: absolute;
+    left: 57%;
+    margin-top: -65px;
+}
 
 /*.result-container {*/
 /*    display: flex;*/
@@ -428,17 +428,17 @@ ul {
 /*    flex-direction: column;*/
 /*}*/
 
-/*.star {*/
-/*    position: absolute;*/
-/*    right: 20%;*/
-/*    top: 2%;*/
-/*}*/
+.star {
+    position: absolute;
+    right: 20%;
+    top: 2%;
+}
 
-/*.star-2 {*/
-/*    position: absolute;*/
-/*    right: 10%;*/
-/*    top: -38%;*/
-/*}*/
+.star-2 {
+    position: absolute;
+    right: 10%;
+    top: -38%;
+}
 
 /*.clocks-icon {*/
 /*    position: absolute;*/
@@ -763,15 +763,15 @@ ul {
 /*        flex-direction: row;*/
 /*    }*/
 
-/*    .percent-item {*/
-/*        !*border: 2px solid var(--border-color);*!*/
-/*        !*border-radius: var(--radius);*!*/
-/*        !*background-color: inherit;*!*/
+    .percent-item {
+        /*border: 2px solid var(--border-color);*/
+        /*border-radius: var(--radius);*/
+        /*background-color: inherit;*/
 
-/*        padding: 16px 60px;*/
-/*        margin-right: 60px;*/
-/*        margin-bottom: 0;*/
-/*    }*/
+        padding: 16px 60px;
+        margin-right: 60px;
+        margin-bottom: 0;
+    }
 
 /*    .percent-item:last-child {*/
 /*        margin-right: 0;*/
