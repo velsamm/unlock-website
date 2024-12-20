@@ -1,80 +1,41 @@
 import CoinsPic from '$assets/icons/svg/coins.svg'
 import Image from "next/image";
 
+const services = [
+	'анализ ситуации',
+	'помощь в переговорах с технической службой поддержки',
+	'помощь в сборе документов, подтверждающих законность операции с криптовалютой',
+	'помощь в составлении пояснения для AML-офицера',
+]
+
 export const UnlockMarketAccounts = () => {
 	return (
-		<div className="row service-market">
-			<div className="col column help-left">
-				<h2 className="help-subtitle">
+		<div className="flex service-market">
+			<div className="grow pr-36 flex flex-col">
+				<h2 className="text-4xl leading-8">
 					С разблокировкой аккаунтов на криптовалютных биржах и
 					онлайн-сервисах:
 				</h2>
-				<div className="d-flex justify-content-flex-end align-items-center">
-					<div className="coins">
-						<Image src={CoinsPic} alt="coinsPic" />
-					</div>
+				<div className="flex-1 flex justify-center items-center">
+					<Image src={CoinsPic} alt="coinsPic" />
 				</div>
 			</div>
-			<div className="col">
+			<div className="grow">
 				<ul>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>анализ ситуации</span>
+					{
+						services.map((service, index) => (
+							<li key={index}>
+								<div className="flex gap-3 items-start">
+									<div className="mt-2">
+										<div className="circle"/>
+									</div>
+									<div className="text-xl">
+										<p>{service}</p>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-                                    <span>
-                                        помощь в переговорах с технической
-                                        службой поддержки
-                                    </span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-                                    <span>
-                                        помощь в сборе документов,
-                                        подтверждающих законность операции с
-                                        криптовалютой
-                                    </span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-                                    <span>
-                                        помощь в составлении пояснения для
-                                        AML-офицера
-                                    </span>
-								</div>
-							</div>
-						</div>
-					</li>
+							</li>
+						))
+					}
 				</ul>
 			</div>
 		</div>

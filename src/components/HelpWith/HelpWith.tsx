@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export const HelpWith = () => {
     return (
-        <div className="row help-with-container">
-            <div className="col help-with">
-                <div className="row column">
-                    <div className="title">
+        <div className="flex gap-5 mt-5">
+            <div className="help-with p-12">
+                <div className="flex flex-col">
+                    <div className="mb-12">
                         <Image src={KeyPic} alt="keyPic" />
                     </div>
                     <span>
@@ -17,9 +17,9 @@ export const HelpWith = () => {
                     </span>
                 </div>
             </div>
-            <div className="col help-with">
-                <div className="row column">
-                    <div className="title">
+            <div className="p-12 help-with">
+                <div className="flex flex-col">
+                    <div className="mb-12">
                         <Image src={HandShakePic} alt="HandShakePic" />
                     </div>
                     <span>
@@ -27,9 +27,9 @@ export const HelpWith = () => {
                     </span>
                 </div>
             </div>
-            <div className="col help-with">
-                <div className="row column">
-                    <div className="title">
+            <div className="p-12 help-with">
+                <div className="flex flex-col">
+                    <div className="mb-12">
                         <Image src={LinesDotsPic} alt="LinesDotsPic" />
                     </div>
                     <span>

@@ -1,103 +1,43 @@
 import notesPic from '$assets/icons/svg/notes.svg'
 import Image from "next/image";
 
+const services = [
+	'сбор и анализ пакета документов для разблокировки банковского счета',
+	'составление пояснения/досудебной претензии в адрес Банка',
+	'помощь в переговорах с Банком',
+	'индивидуальные консультации',
+	'правовое обоснование деятельности с криптовалютой',
+	'подготовка документов для осуществления деятельности с криптовалютой',
+	'судебное урегулирование спора',
+]
+
 export const UnlockBankAccounts = () => {
 	return (
-		<div className="row service-bank">
-			<div className="col column help-left d-flex">
-				<h2 className="help-subtitle">
+		<div className="flex service-market">
+			<div className="grow pr-36 flex flex-col">
+				<h2 className="text-4xl leading-8">
 					С разблокировкой банковских счетов физических лиц:
 				</h2>
-				<div className="d-flex justify-content-flex-end align-items-center notes">
-					<Image src={notesPic} alt="notesPic" />
+				<div className="flex-1 flex justify-center items-center">
+					<Image src={notesPic} alt="notesPic"/>
 				</div>
 			</div>
 			<div className="col">
 				<ul>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>сбор и анализ пакета документов для разблокировки банковского счета</span>
+					{
+						services.map((service, index) => (
+							<li key={index}>
+								<div className="flex gap-3 items-start">
+									<div className="mt-2">
+										<div className="circle"/>
+									</div>
+									<div className="text-xl">
+										<p>{service}</p>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>составление пояснения/досудебной претензии в адрес Банка</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>помощь в переговорах с Банком</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>индивидуальные консультации</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>правовое обоснование деятельности с криптовалютой</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>подготовка документов для осуществления деятельности с криптовалютой</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="row">
-							<div className="col d-flex justify-content-center align-items-center grow-0">
-								<div className="circle" />
-							</div>
-							<div className="col d-flex justify-content-center align-items-center grow-1">
-								<div className="service-item">
-									<span>судебное урегулирование спора</span>
-								</div>
-							</div>
-						</div>
-					</li>
+							</li>
+						))
+					}
 				</ul>
 			</div>
 		</div>

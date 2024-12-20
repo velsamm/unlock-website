@@ -15,26 +15,26 @@ export default function Home() {
     <section className='app'>
       <Header />
       <main>
-        <div className="landing">
-          <h1 className="title">
+        <div className="pt-32 px-16">
+          <h1 className="text-6xl">
             Разблокируем доступ к средствам на криптовалютных биржах
             и банковских счетах
           </h1>
         </div>
-        <div className="title-action relative">
+        <div className="flex justify-between relative">
           <div className="d-flex column gap-10">
             <ContactForm/>
           </div>
           <div className="image-man-on-pc">
-          <Image src={manOnPcPic} alt='manOnPcPic'/>
+            <Image src={manOnPcPic} alt='manOnPcPic'/>
           </div>
         </div>
 
-        <div className="services" id='advantages'/>
+        <div className="mt-20" id='advantages'/>
         <WhoWorks/>
         <HelpWith/>
 
-        <div className="services" id='services'/>
+        <div className="mt-20" id='services'/>
 
         <UnlockServices/>
         <HowWeWork/>
