@@ -1,5 +1,5 @@
 :root[data-theme="dark"] {
-    --text-color: #c5c6c7;
+    --text-color: #eeeded;
     --text-color_triplet: 197, 198, 199;
     --text-color-white: rgba(255, 255, 255, 1);
     --text-color-inverse: #1a1a1a;
@@ -14,5 +14,5 @@
     --button-background-hover: #44b2ae;
     --button-background-telegram: #0088cc;
     --button-radius: 60px;
-    --background-color: #0b0c10;
+    --background-color: #212473;
 }
