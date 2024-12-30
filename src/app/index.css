@@ -353,7 +353,7 @@ ul {
     /*border-radius: var(--radius);*/
     /*margin-bottom: 60px;*/
 
-    padding: 24px;
+    /*padding: 24px;*/
     background-color: var(--services-background);
     border-radius: var(--radius);
 }
@@ -393,13 +393,13 @@ ul {
 /*    flex-direction: column;*/
 /*}*/
 
-/*.result-item {*/
-/*    background-color: var(--services-background);*/
-/*    padding: 48px 60px;*/
-/*    border-radius: var(--radius);*/
-/*    margin-top: 60px;*/
-/*    position: relative;*/
-/*}*/
+.result-item {
+    background-color: var(--services-background);
+    /*padding: 48px 60px;*/
+    border-radius: var(--radius);
+    /*margin-top: 60px;*/
+    /*position: relative;*/
+}
 
 /*.result-item .num {*/
 /*    font-weight: 500;*/
@@ -440,25 +440,25 @@ ul {
     top: -38%;
 }
 
-/*.clocks-icon {*/
-/*    position: absolute;*/
-/*    right: 6%;*/
-/*    top: -15%;*/
+.clocks-icon {
+    position: absolute;
+    right: 6%;
+    top: -15%;
 
-/*    !*position: absolute;*!*/
-/*    !*left: 23%;*!*/
-/*    !*margin-top: -75px;*!*/
-/*}*/
+    /*position: absolute;*/
+    /*left: 23%;*/
+    /*margin-top: -75px;*/
+}
 
-/*.check-icon {*/
-/*    position: absolute;*/
-/*    right: 4%;*/
-/*    top: -15%;*/
+.check-icon {
+    position: absolute;
+    right: 4%;
+    top: -15%;
 
-/*    !*position: absolute;*!*/
-/*    !*left: 90%;*!*/
-/*    !*margin-top: -75px;*!*/
-/*}*/
+    /*position: absolute;*/
+    /*left: 90%;*/
+    /*margin-top: -75px;*/
+}
 
 /*.btn {*/
 /*    cursor: pointer;*/
@@ -643,12 +643,12 @@ ul {
 /*}*/
 
 @media (min-width: 768px) {
-/*    footer li {*/
-/*        margin-bottom: 20px;*/
-/*        font-weight: 500;*/
-/*        font-size: 18px;*/
-/*        line-height: 21px;*/
-/*    }*/
+    /*footer li {*/
+    /*    margin-bottom: 20px;*/
+    /*    font-weight: 500;*/
+    /*    font-size: 18px;*/
+    /*    line-height: 21px;*/
+    /*}*/
 
 /*    header .nav {*/
 /*        gap: 60px;*/
@@ -763,15 +763,15 @@ ul {
 /*        flex-direction: row;*/
 /*    }*/
 
-    .percent-item {
-        /*border: 2px solid var(--border-color);*/
-        /*border-radius: var(--radius);*/
-        /*background-color: inherit;*/
+    /*.percent-item {*/
+    /*    !*border: 2px solid var(--border-color);*!*/
+    /*    !*border-radius: var(--radius);*!*/
+    /*    !*background-color: inherit;*!*/
 
-        padding: 16px 60px;
-        margin-right: 60px;
-        margin-bottom: 0;
-    }
+    /*    padding: 16px 60px;*/
+    /*    margin-right: 60px;*/
+    /*    margin-bottom: 0;*/
+    /*}*/
 
 /*    .percent-item:last-child {*/
 /*        margin-right: 0;*/

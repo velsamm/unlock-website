@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Percent = () => {
     return (
-        <div className="flex">
+        <div className="flex gap-12">
             <div className="mb-16 p-6 relative percent-item grow">
                 <div className="icon">
                     <Image src={percentPic} alt="percPic" />
@@ -24,7 +24,7 @@ export const Percent = () => {
                     </span>
                 </div>
             </div>
-            <div className="percent-item grow">
+            <div className="percent-item p-6 grow">
                 <div className="text-8xl font-medium leading-[117px] mb-6">
                     <span>от $70</span>
                 </div>

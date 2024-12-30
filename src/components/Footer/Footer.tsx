@@ -3,18 +3,18 @@ import { Logo } from "$components/Logo/logo";
 
 export const Footer = () => {
 	return (
-		<footer className="row about">
-			<div className="col grow-2">
+		<footer className="flex">
+			<div className="flex-1">
 				<Logo />
 			</div>
-			<div className="col">
-				<ul>
-					<li>
+			<div className="flex-1 flex">
+				<ul className="flex-1">
+					<li className="mb-3">
 						<a className="page-link" href='#advantages'>
 							Преимущества
 						</a>
 					</li>
-					<li>
+					<li className="mb-3">
 						<a className="page-link" href='#services'>
 							Услуги
 						</a>
@@ -25,10 +25,8 @@ export const Footer = () => {
 						</a>
 					</li>
 				</ul>
-			</div>
-			<div className="col">
-				<ul>
-					<li>Пользовательское соглашение</li>
+				<ul className="flex-1">
+					<li className="mb-3">Пользовательское соглашение</li>
 					<li>Политика конфиденциальности</li>
 				</ul>
 			</div>

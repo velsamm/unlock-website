@@ -42,7 +42,7 @@ export default function Home() {
         <div id='prices' />
         <Price/>
 
-        <TG/>
+        {/*<TG/>*/}
         <Footer/>
       </main>
     </section>
