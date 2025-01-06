@@ -27,7 +27,7 @@ const navs = [
 
 export const Footer = () => {
 	return (
-		<footer className="flex">
+		<footer className="flex flex-col md:flex-row gap-6 md:gap-0">
 			<div className="flex-1">
 				<ul>
 					<li className="mb-3"><Logo/></li>

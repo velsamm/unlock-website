@@ -11,20 +11,20 @@ import manOnPcPic from '$assets/icons/svg/ManOnPC.svg'
 export default function Home() {
   return (
     <main>
-      <div className="pt-32">
-        <h1 className="text-6xl">
+      <div className="mt-8 md:mt-32">
+        <h1 className="text-2xl md:text-6xl">
           Разблокируем доступ к средствам на криптовалютных биржах
           и банковских счетах
         </h1>
       </div>
-      <div className="flex justify-between relative">
+      <div className="flex justify-between flex-col-reverse md:flex-row">
         <ContactForm/>
         <div className="image-man-on-pc">
           <Image src={manOnPcPic} alt='manOnPcPic'/>
         </div>
       </div>
 
-      <div className="mt-20" id='advantages'/>
+      <div className="mt-20" />
       <WhoWorks/>
       <HelpWith/>
 

@@ -4,7 +4,7 @@ import { UnlockBankAccounts } from '$components/Services/UnlockBankAccounts/Unlo
 export const UnlockServices = () => {
     return (
         <>
-            <div className="text-6xl mb-16">
+            <div className="text-2xl md:text-6xl mb-16">
                 <span>Мы можем помочь:</span>
             </div>
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const HelpWith = () => {
     return (
-        <div className="flex gap-5 mt-5">
+        <div className="flex gap-5 mt-5 flex-col md:flex-row">
             <div className="help-with p-12">
                 <div className="flex flex-col">
                     <div className="mb-12">

@@ -5,17 +5,17 @@ import star2Pic from '$assets/icons/svg/star-2.svg'
 export const HowWeWork = () => {
     return (
         <>
-            <div className="mt-20 mb-10 text-6xl">
+            <div className="mt-20 mb-10 text-2xl md:text-6xl">
                 <span>Как мы работаем:</span>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-col md:flex-row">
                 <div className="flex-1 p-6 mb-10 how-we-work-item">
                     <div className="flex flex-col relative">
                         <div className="star">
                             <Image src={starPic} alt='starPic' />
                         </div>
                         <div className="flex flex-col text-3xl leading-9">
-                            <span className="text-8xl font-medium leading-[117px] mb-6">1</span>
+                            <span className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">1</span>
                             <span className="text-3xl leading-9 mb-4">Сбор документов</span>
                         </div>
                         <span className="text-lg">
@@ -29,7 +29,7 @@ export const HowWeWork = () => {
                 <div className="flex-1 p-6 mb-10 how-we-work-item">
                     <div className="flex flex-col relative">
                         <div className="flex flex-col text-3xl leading-9">
-                            <span className="text-8xl font-medium leading-[117px] mb-6">2</span>
+                            <span className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">2</span>
                             <span className="text-3xl leading-9 mb-4">Анализ ситуации</span>
                         </div>
                         <span className="text-lg">
@@ -46,7 +46,7 @@ export const HowWeWork = () => {
                             <Image src={star2Pic} alt='star2Pic' />
                         </div>
                         <div className="flex flex-col text-3xl leading-9">
-                            <span className="text-8xl font-medium leading-[117px] mb-6">3</span>
+                            <span className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">3</span>
                             <span className="text-3xl leading-9 mb-4">Переговоры с сервисом</span>
                         </div>
                         <span className="text-lg">

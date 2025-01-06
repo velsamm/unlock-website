@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export const Result = () => {
     return (
-        <div className="flex gap-12">
+        <div className="flex gap-12 flex-col md:flex-row">
             <div className="result-item mb-16 p-6 relative grow">
                 <div className="clocks-icon">
                     <Image src={clockPic} alt="clocksPic" />
                 </div>
-                <div className="text-8xl font-medium leading-[117px] mb-6">
+                <div className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">
                     <span>От 5 до 30 дней</span>
                 </div>
                 <div className="text-3xl leading-9 mb-4">
@@ -20,7 +20,7 @@ export const Result = () => {
                 <div className="check-icon">
                     <Image src={checkPic} alt="checkPic" />
                 </div>
-                <div className="text-8xl font-medium leading-[117px] mb-6">
+                <div className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">
                     <span>Платите за результат</span>
                 </div>
                 <div className="text-3xl leading-9 mb-4">
