@@ -1,29 +1,55 @@
 import React from "react";
 import { Logo } from "$components/Logo/logo";
+import Link from 'next/link'
+
+const navs = [
+	{
+		title: 'О нас',
+		href: '/about'
+	},
+	{
+		title: 'Услуги',
+		href: '/services'
+	},
+	{
+		title: 'Отзывы',
+		href: '/feedbacks'
+	},
+	{
+		title: 'Социальные сети',
+		href: '/socials'
+	},
+	{
+		title: 'Контакты',
+		href: '/contacts'
+	}
+]
 
 export const Footer = () => {
 	return (
 		<footer className="flex">
 			<div className="flex-1">
-				<Logo />
+				<ul>
+					<li className="mb-3"><Logo/></li>
+					<li>
+						<p>Индивидуальный предприниматель Новикова Кристина Игоревна</p>
+					</li>
+					<li className="mb-3">
+						<p>ОГРНИП: 324237500338592, ИНН: 615528000201</p>
+					</li>
+				</ul>
 			</div>
 			<div className="flex-1 flex">
 				<ul className="flex-1">
-					<li className="mb-3">
-						<a className="page-link" href='#advantages'>
-							Преимущества
-						</a>
-					</li>
-					<li className="mb-3">
-						<a className="page-link" href='#services'>
-							Услуги
-						</a>
-					</li>
-					<li>
-						<a className="page-link" href='#prices'>
-							Стоимость
-						</a>
-					</li>
+					{
+						navs.map((nav, index) => (
+							<li className="mb-3">
+								<Link key={index} href={nav.href}>
+									{nav.title}
+								</Link>
+							</li>
+						))
+					}
 				</ul>
 				<ul className="flex-1">
 					<li className="mb-3">Пользовательское соглашение</li>
