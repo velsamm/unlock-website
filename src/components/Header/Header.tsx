@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Logo } from "$components/Logo/logo";
 import { ThemeButton } from "$components/ThemeButton/themeButton";
 import Link from 'next/link'
+import { Burger } from "$components/Header/Burger";
 
 const navs = [
 	{
@@ -32,17 +33,19 @@ const navs = [
 
 export const Header: FC = () => (
 	<header className="flex justify-between items-center">
-		<div className="">
+		<div>
 			<Logo />
 		</div>
-		<div className="flex gap-10">
-			{
-				navs.map((nav, index) => (
-					<Link key={index} href={nav.href}>
-						{nav.title}
-					</Link>
-				))
-			}
+		<div className="flex gap-10 nav">
+			<Burger>
+				{
+					navs.map((nav, index) => (
+						<Link key={index} href={nav.href}>
+							{nav.title}
+						</Link>
+					))
+				}
+			</Burger>
 			<ThemeButton />
 		</div>
 	</header>

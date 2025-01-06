@@ -26,6 +26,12 @@ ul {
     list-style-type: none;
 }
 
+.burger {
+    background-color: var(--burger-background-color);
+    box-shadow: 0 0 15px var(--burger-background-color);
+    border-radius: 8px;
+}
+
 .btn-theme {
     width: 28px;
     height: 28px;
@@ -61,9 +67,9 @@ ul {
 /*    margin: 0;*/
 /*}*/
 
-/*header .nav {*/
-/*    gap: 20px;*/
-/*}*/
+header .nav {
+    flex-direction: row-reverse;
+}
 
 
 /*.ta-center {*/
@@ -653,9 +659,9 @@ ul {
     /*    line-height: 21px;*/
     /*}*/
 
-/*    header .nav {*/
-/*        gap: 60px;*/
-/*    }*/
+    header .nav {
+        flex-direction: row;
+    }
 
 /*    .landing .title {*/
 /*        font-size: var(--font-size-title);*/
