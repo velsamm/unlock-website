@@ -11,16 +11,14 @@ import manOnPcPic from '$assets/icons/svg/ManOnPC.svg'
 export default function Home() {
   return (
     <main>
-      <div className="pt-32 px-16">
+      <div className="pt-32">
         <h1 className="text-6xl">
           Разблокируем доступ к средствам на криптовалютных биржах
           и банковских счетах
         </h1>
       </div>
       <div className="flex justify-between relative">
-        <div className="d-flex column gap-10">
-          <ContactForm/>
-        </div>
+        <ContactForm/>
         <div className="image-man-on-pc">
           <Image src={manOnPcPic} alt='manOnPcPic'/>
         </div>
