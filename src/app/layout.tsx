@@ -27,9 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme='dark'>
-    <body>
+    <body className='app'>
       <Header/>
-      <section className='flex flex-1'>
+      <section className='flex flex-1 flex-col'>
         {children}
       </section>
       <Footer/>

@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Logo } from "$components/Logo/logo";
 import { ThemeButton } from "$components/ThemeButton/themeButton";
+import Link from 'next/link'
 
 const navs = [
 	{
@@ -13,11 +14,11 @@ const navs = [
 	},
 	{
 		title: 'Услуги',
-		href: '#services'
+		href: '/services'
 	},
 	{
 		title: 'Отзывы',
-		href: '/feedback'
+		href: '/feedbacks'
 	},
 	{
 		title: 'Социальные сети',
@@ -37,9 +38,9 @@ export const Header: FC = () => (
 		<div className="flex gap-10">
 			{
 				navs.map((nav, index) => (
-					<a key={index} href={nav.href}>
+					<Link key={index} href={nav.href}>
 						{nav.title}
-					</a>
+					</Link>
 				))
 			}
 			<ThemeButton />

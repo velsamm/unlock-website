@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { WhoWorks } from "$components/WhoWorks/WhoWorks";
 import { HelpWith } from "$components/HelpWith/HelpWith";
-import { UnlockServices } from "$components/Services";
+// import { UnlockServices } from "$components/Services";
 import { HowWeWork } from "$components/HowWeWork/HowWeWork";
 import { Price } from "$components/Price";
 import { TG } from "$components/TG/TG";
@@ -30,9 +30,9 @@ export default function Home() {
       <WhoWorks/>
       <HelpWith/>
 
-      <div className="mt-20" id='services'/>
+      <div className="mt-20" />
 
-      <UnlockServices/>
+      {/*<UnlockServices/>*/}
       <HowWeWork/>
 
       <div id='prices' />
