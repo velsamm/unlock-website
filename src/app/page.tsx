@@ -4,7 +4,7 @@ import { HelpWith } from "$components/HelpWith/HelpWith";
 // import { UnlockServices } from "$components/Services";
 import { HowWeWork } from "$components/HowWeWork/HowWeWork";
 import { Price } from "$components/Price";
-import { TG } from "$components/TG/TG";
+// import { TG } from "$components/TG/TG";
 import { ContactForm } from "$components/ContactForm/ContactForm";
 import manOnPcPic from '$assets/icons/svg/ManOnPC.svg'
 
