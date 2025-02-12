@@ -1,6 +1,10 @@
 @import "light-scheme.css";
 @import "dark-scheme.css";
 
+:root {
+    --header-height: 50px;
+}
+
 html {
     scroll-behavior: smooth;
     color: var(--text-color);
@@ -30,6 +34,7 @@ ul {
     background-color: var(--burger-background-color);
     box-shadow: 0 0 15px var(--burger-background-color);
     border-radius: 8px;
+    z-index: 10;
 }
 
 .btn-theme {
@@ -51,6 +56,10 @@ ul {
     margin-bottom: 0;
 }
 
+.cta {
+    height: calc(100vh - var(--header-height));
+}
+
 /*footer li {*/
 /*    margin-bottom: 10px;*/
 /*    font-weight: 500;*/
@@ -67,10 +76,19 @@ ul {
 /*    margin: 0;*/
 /*}*/
 
+header {
+    height: var(--header-height);
+}
+
 header .nav {
     flex-direction: row-reverse;
 }
 
+.image-man-on-pc {
+    display: flex;
+    z-index: 1;
+    max-height: 250px;
+}
 
 /*.ta-center {*/
 /*    text-align: center;*/
@@ -734,6 +752,12 @@ header .nav {
         padding: 60px;
     }
 
+    .image-man-on-pc {
+        display: flex;
+        z-index: 1;
+        max-height: 100%;
+    }
+
 /*    !*.help-left: {*!*/
 /*    !*    padding-right: 150px;*!*/
 /*    !*}*!*/
@@ -830,10 +854,3 @@ header .nav {
 /*}*/
 
 
-.image-man-on-pc {
-    display: block;
-    /*position: absolute;*/
-    right: 60px;
-    top: -50%;
-    z-index: 1;
-}
