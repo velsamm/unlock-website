@@ -238,27 +238,33 @@ header .nav {
 /*    margin-bottom: 49px;*/
 /*}*/
 
-.service-market, .service-bank {
-    /*border: 2px solid var(--border-color);*/
+.services-list {
+    background-color: var(--services-background);
     padding: 25px;
     border-radius: var(--radius);
-
-    background-color: var(--services-background);
-
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    margin-bottom: 60px;
 }
 
-.circle {
-    border-radius: 50%;
-    background-color: var(--circle-color);
-    width: 15px;
-    height: 15px;
-    min-width: 15px;
-    min-height: 15px;
-}
+/*.service-market, .service-bank {*/
+/*    !*border: 2px solid var(--border-color);*!*/
+/*    padding: 25px;*/
+/*    border-radius: var(--radius);*/
+
+/*    background-color: var(--services-background);*/
+
+/*    flex-direction: column;*/
+/*    flex-wrap: nowrap;*/
+
+/*    margin-bottom: 60px;*/
+/*}*/
+
+/*.circle {*/
+/*    border-radius: 50%;*/
+/*    background-color: var(--circle-color);*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    min-width: 15px;*/
+/*    min-height: 15px;*/
+/*}*/
 
 /*.service-item {*/
 /*    margin-left: 37px;*/
