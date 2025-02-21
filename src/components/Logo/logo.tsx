@@ -4,18 +4,15 @@ import React, { FC, useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import LogoDarkImage from '$assets/icons/svg/logo-dark.svg'
 import LogoLightImage from '$assets/icons/svg/logo-light.svg'
-import { getCurrentScheme } from "$utils/getCurrentScheme";
+import { getCurrentTheme } from "$utils/getCurrentTheme";
 
 export const Logo: FC = () => {
 	const [src, setSrc] = useState();
 
 	const updateTheme = useCallback(() => {
-		const currentTheme = getCurrentScheme();
-		if (currentTheme === 'dark') {
-			return setSrc(LogoDarkImage);
-		}
+		const currentTheme = getCurrentTheme();
 
-		return setSrc(LogoLightImage);
+		setSrc(currentTheme === 'dark' ? LogoDarkImage : LogoLightImage);
 	}, [])
 
 	useEffect(() => {

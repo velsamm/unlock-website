@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Logo } from "$components/Logo/logo";
-import { ThemeButton } from "$components/ThemeButton/themeButton";
+// import { ThemeButton } from "$components/ThemeButton/themeButton";
 import Link from 'next/link'
 import { Burger } from "$components/Header/Burger";
 
@@ -46,7 +46,7 @@ export const Header: FC = () => (
 					))
 				}
 			</Burger>
-			<ThemeButton />
+			{/*<ThemeButton />*/}
 		</div>
 	</header>
 )

@@ -4,13 +4,16 @@ import React, { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import ThemeLightImg from "$assets/icons/svg/theme-light.svg";
 import ThemeDarkImg from "$assets/icons/svg/theme-dark.svg";
-import { getCurrentScheme } from "$utils/getCurrentScheme";
+import { getCurrentTheme } from "$utils/getCurrentTheme";
+import { setStorageTheme } from "$utils/storageScheme";
+import { setDocumentTheme } from "$utils/setDocumentTheme";
 
+// temporary disabled
 export const ThemeButton: FC = () => {
 	const [src, setSrc] = useState();
 
 	useEffect(() => {
-		const currentTheme = getCurrentScheme();
+		const currentTheme = getCurrentTheme();
 		if (currentTheme === 'dark') {
 			return setSrc(ThemeDarkImg);
 		}
@@ -19,17 +22,15 @@ export const ThemeButton: FC = () => {
 	}, [])
 
 	const handleClick = () => {
-		const currentTheme = getCurrentScheme();
+		const currentTheme = getCurrentTheme();
 
 		if (currentTheme === 'dark') {
-			document
-				.getElementsByTagName('html')[0]
-				.setAttribute('data-theme', 'light');
+			setDocumentTheme('light');
+			setStorageTheme('light');
 			setSrc(ThemeLightImg);
 		} else {
-			document
-				.getElementsByTagName('html')[0]
-				.setAttribute('data-theme', 'dark');
+			setDocumentTheme('dark');
+			setStorageTheme('dark');
 			setSrc(ThemeDarkImg);
 		}
 	}
