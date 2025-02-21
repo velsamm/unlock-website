@@ -1,8 +1,8 @@
 'use client';
 
-import { FC, useEffect, useRef } from "react";
-import { getStorageTheme } from "$utils/storageScheme";
-import { setDocumentTheme } from "$utils/setDocumentTheme";
+import { FC } from "react";
+// import { getStorageTheme } from "$utils/storageScheme";
+// import { setDocumentTheme } from "$utils/setDocumentTheme";
 
 export const Theme: FC = () => {
 	// const isMounted = useRef(false)
