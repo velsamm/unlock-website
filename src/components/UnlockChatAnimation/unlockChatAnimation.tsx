@@ -18,13 +18,26 @@ const ChatMessage: FC<Props> = ({ children, type, showDelay = 1000 }) => {
 	const outStyles = type === 'out' && 'bg-green-500 text-white ml-auto';
 	const imageSrc = type === 'in' ? operatorImg : manImg;
 
-	useEffect(() => {
-		const timeoutId = setTimeout(() => {
+	const startAnimation = () => {
+		return setTimeout(() => {
 			setShow(true);
 		}, showDelay);
+	}
+
+	useEffect(() => {
+		const timeoutId = startAnimation();
+		let restartTimeoutId: NodeJS.Timeout;
+
+		const restartIntervalId = setInterval(() => {
+			setShow(false);
+			clearTimeout(restartTimeoutId);
+			restartTimeoutId = startAnimation();
+		}, 5000)
 
 		return () => {
-			clearTimeout(timeoutId)
+			clearTimeout(timeoutId);
+			clearTimeout(restartTimeoutId);
+			clearInterval(restartIntervalId);
 		}
 	}, [])
 
@@ -49,9 +62,9 @@ const Chat: FC<PropsWithChildren> = ({ children }) => {
 export const UnlockChatAnimation: FC = () => {
 	return (
 		<Chat>
-			<ChatMessage type='in' showDelay={500}>Ваш аккаунт заблокирован!</ChatMessage>
-			<ChatMessage type='out' showDelay={1000}>Что мне делать?</ChatMessage>
-			<ChatMessage type='in' showDelay={1500}>Обратитесь в BZ Pravo</ChatMessage>
+			<ChatMessage type='in' showDelay={1000}>Ваш аккаунт заблокирован!</ChatMessage>
+			<ChatMessage type='out' showDelay={1500}>Что мне делать?</ChatMessage>
+			<ChatMessage type='in' showDelay={2000}>Обратитесь в BZ Pravo</ChatMessage>
 		</Chat>
 	)
 }
