@@ -1,6 +1,4 @@
-import Image from "next/image";
-import starPic from '$assets/icons/svg/star.svg'
-import star2Pic from '$assets/icons/svg/star-2.svg'
+import React from "react";
 
 export const HowWeWork = () => {
     return (
@@ -10,10 +8,7 @@ export const HowWeWork = () => {
             </div>
             <div className="flex gap-5 flex-col md:flex-row">
                 <div className="flex-1 p-6 mb-10 how-we-work-item">
-                    <div className="flex flex-col relative">
-                        <div className="star">
-                            <Image src={starPic} alt='starPic' />
-                        </div>
+                    <div className="flex flex-col">
                         <div className="flex flex-col text-3xl leading-9">
                             <span className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">1</span>
                             <span className="text-3xl leading-9 mb-4">Сбор документов</span>
@@ -41,10 +36,7 @@ export const HowWeWork = () => {
                     </div>
                 </div>
                 <div className="flex-1 p-6 mb-10 how-we-work-item">
-                    <div className="flex flex-col relative">
-                        <div className="star-2">
-                            <Image src={star2Pic} alt='star2Pic' />
-                        </div>
+                    <div className="flex flex-col">
                         <div className="flex flex-col text-3xl leading-9">
                             <span className="text-5xl md:text-8xl font-medium leading-[117px] mb-6">3</span>
                             <span className="text-3xl leading-9 mb-4">Переговоры с сервисом</span>

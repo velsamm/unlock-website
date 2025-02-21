@@ -462,17 +462,17 @@ header .nav {
 /*    flex-direction: column;*/
 /*}*/
 
-.star {
-    position: absolute;
-    right: 20%;
-    top: 2%;
-}
+/*.star {*/
+/*    position: absolute;*/
+/*    right: 20%;*/
+/*    top: 2%;*/
+/*}*/
 
-.star-2 {
-    position: absolute;
-    right: 10%;
-    top: -38%;
-}
+/*.star-2 {*/
+/*    position: absolute;*/
+/*    right: 10%;*/
+/*    top: -38%;*/
+/*}*/
 
 .clocks-icon {
     position: absolute;
