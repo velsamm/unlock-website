@@ -1,15 +1,13 @@
 import React, { FC } from "react";
 import { Typography } from "$components/typography/typography";
 import { Block } from "$components/block/block";
-import { Button } from "$components/button/button";
-import { ImageWrapper } from "$components/image/image";
-import telegramImage from '$assets/icons/telegram.svg';
-import emailImage from '$assets/icons/email.svg';
+import { TelegramButton } from "$components/buttons/TelegramButton";
+import { MailButton } from "$components/buttons/MailButton";
 
 export const ContactOptions: FC = () => {
 	return (
 		<Block>
-			<div className='grid grid-rows-2 grid-cols-2 gap-10'>
+			<div id='contact-options' className='grid grid-rows-2 grid-cols-2 gap-10'>
 				<div className='col-span-2 row-span-full flex items-center'>
 					<Typography appearance='header'>
 						Консультация специалистов
@@ -23,12 +21,7 @@ export const ContactOptions: FC = () => {
 					<Typography as='p' className='mt-5 md:mb-2 mb-5'>
 						Быстрая связь с нашими <br/>экспертами через мессенджер
 					</Typography>
-					<Button className='mx-auto flex gap-3'>
-						<Typography appearance='button'>
-							Получить консультацию
-						</Typography>
-						<ImageWrapper src={telegramImage} width={24} />
-					</Button>
+					<TelegramButton />
 				</div>
 
 				<div className='md:col-span-1 col-span-2 row-span-1 text-center rounded-2xl bg-gray-100 py-10'>
@@ -38,12 +31,7 @@ export const ContactOptions: FC = () => {
 					<Typography as='p' className='mt-5 md:mb-2 mb-5'>
 						Отправьте нам детали <br/>вашей ситуации для анализа
 					</Typography>
-					<Button className='mx-auto flex gap-3'>
-						<Typography appearance='button'>
-							Получить консультацию
-						</Typography>
-						<ImageWrapper src={emailImage} width={24} />
-					</Button>
+					<MailButton />
 				</div>
 			</div>
 		</Block>
