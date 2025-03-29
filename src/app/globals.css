@@ -1,11 +1,10 @@
 @import "font.css";
-@import "index.css";
+@import "colors.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.app {
-    max-width: 1366px;
-    margin: 0 auto;
+html {
+    background-color: var(--primary-background-color);
 }

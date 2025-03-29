@@ -1,0 +1,19 @@
+.typography-header {
+    @apply md:text-3xl text-2xl;
+}
+
+.typography-subheader {
+    @apply md:text-2xl text-lg;
+}
+
+.typography-regular {
+    @apply md:text-lg text-sm font-light;
+}
+
+.typography-button {
+    @apply text-lg font-semibold;
+}
+
+.typography-small {
+    @apply text-xs;
+}
