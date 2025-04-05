@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "$components/header/header";
-import { Footer } from "$components/footer/footer";
+import { Header } from "$components/Header/Header";
+import { Footer } from "$components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Разблокировка аккаунтов",
@@ -15,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme='dark'>
-    <body>
-      <Header />
-      {children}
-      <Footer />
+    <body className='app'>
+      <Header/>
+      <section className='flex flex-1 flex-col'>
+        {children}
+      </section>
+      <Footer/>
     </body>
     </html>
 );
