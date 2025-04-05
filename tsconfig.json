@@ -20,7 +20,6 @@
     ],
     "baseUrl": "./src/",
     "paths": {
-      "$app/*": ["./app/*"],
       "$components/*": ["./components/*"],
       "$assets/*": ["assets/*"],
       "$utils/*": ["utils/*"],

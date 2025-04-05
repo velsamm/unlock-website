@@ -4,8 +4,8 @@ import { Header } from "$components/header/header";
 import { Footer } from "$components/footer/footer";
 
 export const metadata: Metadata = {
-  title: "БЗ Право",
-  description: "БЗ Право. Поможем разблокировать доступ к криптовалютным аккаунтам и банковским счетам",
+  title: "Разблокировка аккаунтов",
+  description: "Разблокируем доступ к криптовалютным аккаунтам и банковским счетам",
 };
 
 export default function RootLayout({
