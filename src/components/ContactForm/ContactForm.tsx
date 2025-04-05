@@ -2,6 +2,7 @@
 
 import React from "react";
 import { EMAIL_LINK, TELEGRAM_LINK } from "$utils/constants";
+import { Typography } from "$components/typography/typography";
 
 const navigate = (url: string, target = '_blank') => {
   window.open(url, target)
@@ -18,9 +19,9 @@ export const ContactForm = () => {
 
   return (
     <section className='my-auto mt-8 md:m-0'>
-      <h2 className='text-2xl md:text-5xl text-center'>
+      <Typography as='h2' appearance='subheader' className='text-center'>
         Получить консультацию
-      </h2>
+      </Typography>
       <button className="btn my-5" onClick={handleTelegramClick}>В телеграме</button>
       <button className="btn" onClick={handleEmailClick}>По эл. почте</button>
     </section>

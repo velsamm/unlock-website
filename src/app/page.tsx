@@ -4,17 +4,18 @@ import { HowWeWork } from "$components/HowWeWork/HowWeWork";
 import { ContactForm } from "$components/ContactForm/ContactForm";
 import { UnlockChatAnimation } from "$components/UnlockChatAnimation/unlockChatAnimation";
 import { Theme } from "$components/Theme/Theme";
+import { Typography } from "$components/typography/typography";
 
 export default function Home() {
   return (
     <main>
       <Theme />
-      <section className="pt-0 cta flex flex-col justify-evenly pb-36">
+      <section className="pt-0 cta flex flex-col justify-evenly">
         <div>
-          <h1 className="text-2xl md:text-6xl">
+          <Typography as='h1' appearance='header'>
             Разблокируем доступ к средствам на криптовалютных биржах
             и банковских счетах
-          </h1>
+          </Typography>
         </div>
         <div className="flex justify-between flex-col-reverse md:flex-row items-center gap-0 md:gap-5">
           <ContactForm/>
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mt-20"/>
+      <div className="mt-20 md:m-0"/>
       <WhoWorks/>
       <HelpWith/>
 

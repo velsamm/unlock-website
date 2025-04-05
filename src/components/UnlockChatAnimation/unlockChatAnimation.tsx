@@ -5,6 +5,7 @@ import cn from "classnames";
 import Image from "next/image";
 import operatorImg from '$assets/icons/svg/operator.svg';
 import manImg from '$assets/icons/svg/man.svg';
+import { Typography } from "$components/typography/typography";
 
 type Props = PropsWithChildren & {
 	type?: 'in' | 'out';
@@ -45,7 +46,7 @@ const ChatMessage: FC<Props> = ({ children, type, showDelay = 1000 }) => {
 		<div className='w-full flex py-2'>
 			<div className={cn( 'box-border p-3 rounded-2xl transition-opacity', inStyles, outStyles, show ? 'opacity-100' : 'opacity-0' )}>
 				<Image src={imageSrc} alt='op' width={24} />
-				<span>{children}</span>
+				<Typography as='span' appearance='regular'>{children}</Typography>
 			</div>
 		</div>
 	)

@@ -1,61 +1,54 @@
-import React from "react";
+import React, { FC } from "react";
 import { Logo } from "$components/Logo/logo";
-import Link from 'next/link'
+import { Typography } from "$components/typography/typography";
+import { ImageWrapper } from "$components/image/image";
+import { socials } from "./socials";
 
-const navs = [
-	{
-		title: 'О нас',
-		href: '/about'
-	},
-	{
-		title: 'Услуги',
-		href: '/services'
-	},
-	{
-		title: 'Отзывы',
-		href: '/feedbacks'
-	},
-	{
-		title: 'Социальные сети',
-		href: '/socials'
-	},
-	{
-		title: 'Контакты',
-		href: '/contacts'
-	}
-]
+export const Footer: FC = () => {
+  return (
+    <footer className="pb-12">
+      <section className="grid grid-cols-2 grid-rows-3 gap-5">
+        <div className="col-span-2 row-span-full">
+          <Logo />
+        </div>
 
-export const Footer = () => {
-	return (
-		<footer className="flex flex-col md:flex-row gap-6 md:gap-0">
-			<div className="flex-1">
-				<ul>
-					<li className="mb-3"><Logo/></li>
-					<li>
-						<p>Индивидуальный предприниматель Новикова Кристина Игоревна</p>
-					</li>
-					<li className="mb-3">
-						<p>ОГРНИП: 324237500338592, ИНН: 615528000201</p>
-					</li>
-				</ul>
-			</div>
-			<div className="flex-1 flex">
-				<ul className="flex-1">
-					{
-						navs.map((nav, index) => (
-							<li key={index} className="mb-3">
-								<Link href={nav.href}>
-									{nav.title}
-								</Link>
-							</li>
-						))
-					}
-				</ul>
-				<ul className="flex-1">
-					<li className="mb-3">Пользовательское соглашение</li>
-					<li>Политика конфиденциальности</li>
-				</ul>
-			</div>
-		</footer>
-	)
-}
+        <div className="md:col-span-1 col-span-2 row-span-1">
+          <ul className="flex gap-5">
+            {socials.map((social) => (
+              <li key={social.url} className="mb-3">
+                <a href={social.url} target="_blank" rel="noreferrer noopener">
+                  <ImageWrapper src={social.imgSrc} width={24} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="md:col-span-1 col-span-2 flex justify-end">
+          <ul>
+            <li className="mb-3">
+              <Typography appearance="small">
+                Пользовательское соглашение
+              </Typography>
+            </li>
+            <li className="mb-6">
+              <Typography appearance="small">
+                Политика конфиденциальности
+              </Typography>
+            </li>
+            <li className="mb-3">
+              <Typography appearance="small">
+                <b>Индивидуальный предприниматель</b> Новикова Кристина Игоревна
+              </Typography>
+            </li>
+            <li className="mb-3">
+              <Typography appearance="small">
+                <b>ОГРНИП: </b>324237500338592, <b>ИНН: </b>615528000201
+              </Typography>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  );
+};
