@@ -30,7 +30,7 @@ type EventType =
  * ```
  */
 export function useOnClickOutside<T extends HTMLElement = HTMLElement>(
-	ref: RefObject<T> | RefObject<T>[],
+	ref: RefObject<T> | RefObject<T>[] | RefObject<null>,
 	handler: (event: MouseEvent | TouchEvent | FocusEvent) => void,
 	eventType: EventType = 'mousedown',
 	eventListenerOptions: AddEventListenerOptions = {},

@@ -43,8 +43,8 @@ export const Footer = () => {
 				<ul className="flex-1">
 					{
 						navs.map((nav, index) => (
-							<li className="mb-3">
-								<Link key={index} href={nav.href}>
+							<li key={index} className="mb-3">
+								<Link href={nav.href}>
 									{nav.title}
 								</Link>
 							</li>
