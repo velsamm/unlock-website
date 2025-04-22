@@ -47,7 +47,7 @@ export function ParticlesContainer() {
 					enable: false,
 					mode: "repulse",
 				},
-				resize: true,
+				// resize: true,
 			},
 			modes: {
 				push: {
@@ -83,7 +83,7 @@ export function ParticlesContainer() {
 			number: {
 				density: {
 					enable: true,
-					area: 800,
+					// area: 800,
 				},
 				value: 120,
 			},
