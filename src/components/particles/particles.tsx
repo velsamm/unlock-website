@@ -5,7 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { IParticlesProps } from "@tsparticles/react/dist/IParticlesProps";
 
-export function ParticlesContainer(props: unknown) {
+export function ParticlesContainer() {
 	const [ init, setInit ] = useState(false);
 
 	// this should be run only once per application lifetime
