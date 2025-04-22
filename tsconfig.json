@@ -24,6 +24,8 @@
       "$assets/*": ["assets/*"],
       "$utils/*": ["utils/*"],
       "$hooks/*": ["hooks/*"],
+      "$app/*": ["./app/*"],
+      "$models/*": ["./models/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

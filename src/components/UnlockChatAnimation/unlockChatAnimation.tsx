@@ -6,6 +6,7 @@ import Image from "next/image";
 import operatorImg from '$assets/icons/svg/operator.svg';
 import manImg from '$assets/icons/svg/man.svg';
 import { Typography } from "$components/typography/typography";
+import { BRAND_NAME } from '$app/constants';
 
 type Props = PropsWithChildren & {
 	type?: 'in' | 'out';
@@ -65,7 +66,7 @@ export const UnlockChatAnimation: FC = () => {
 		<Chat>
 			<ChatMessage type='in' showDelay={1000}>Ваш аккаунт заблокирован!</ChatMessage>
 			<ChatMessage type='out' showDelay={1500}>Что мне делать?</ChatMessage>
-			<ChatMessage type='in' showDelay={2000}>Обратитесь в BZ Pravo</ChatMessage>
+			<ChatMessage type='in' showDelay={2000}>Обратитесь в {BRAND_NAME}</ChatMessage>
 		</Chat>
 	)
 }

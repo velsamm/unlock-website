@@ -22,10 +22,6 @@ const navs = [
 		href: '/feedbacks'
 	},
 	{
-		title: 'Социальные сети',
-		href: '/socials'
-	},
-	{
 		title: 'Контакты',
 		href: '/contacts'
 	}
@@ -40,7 +36,7 @@ export const Header: FC = () => (
 			<Burger>
 				{
 					navs.map((nav, index) => (
-						<Link key={index} href={nav.href}>
+						<Link key={index} href={nav.href} className='no-underline hover:underline underline-offset-4'>
 							{nav.title}
 						</Link>
 					))

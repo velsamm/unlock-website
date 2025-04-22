@@ -1,7 +1,8 @@
+import Image from "next/image";
 import PurplePersonPic from "$assets/icons/svg/PurplePerson.svg";
 import OrangePersonPic from "$assets/icons/svg/OrangePerson.svg";
-import Image from "next/image";
 import { Typography } from "$components/typography/typography";
+import { BRAND_NAME } from '$app/constants';
 
 export const WhoWorks = () => {
   return (
@@ -18,7 +19,7 @@ export const WhoWorks = () => {
       </div>
       <div className="pt-5 md:p-5">
         <Typography as="span" appearance='regular' className="md:!text-3xl md:!leading-10">
-          В штате BZ Pravo работают профессиональные юристы с опытом работы
+          В штате {BRAND_NAME} работают профессиональные юристы с опытом работы
           более 10 лет в областях KYC/AML, Fintech и банковской сферы
         </Typography>
       </div>
