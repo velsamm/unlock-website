@@ -16,7 +16,8 @@ footer {
 
 body {
     margin: 0;
-    background-color: var(--background-color);
+    background: var(--background-color);
+    background: var(--background-gradient);
     padding: 20px;
     font-family: 'Raleway', sans-serif;
 
