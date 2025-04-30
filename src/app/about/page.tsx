@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-// import { About } from "./About";
+import { About } from "./About";
 import { BRAND_NAME } from '$app/constants';
-import { UnderConstruction } from "$components/UnderConstruction/underConstruction";
 
 export const metadata: Metadata = {
   title: `${BRAND_NAME} Команда AML и других специалистов`,
@@ -10,6 +9,6 @@ export const metadata: Metadata = {
 
 export default function Home() {
 	return (
-		<UnderConstruction />
+		<About />
 	)
 }
