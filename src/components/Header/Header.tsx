@@ -22,8 +22,8 @@ const navs = [
 		href: '/feedbacks'
 	},
 	{
-		title: 'Контакты',
-		href: '/contacts'
+		title: 'Блог',
+		href: '/blog'
 	}
 ]
 
