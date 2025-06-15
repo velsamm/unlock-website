@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "$components/Header/Header";
 import { Footer } from "$components/Footer/Footer";
 import { ParticlesContainer } from '$components/particles/particles';
+import { GTAGScript } from "$components/scripts/gtag";
 
 export const metadata: Metadata = {
   title: "Разблокировка аккаунтов",
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme='dark'>
+    <GTAGScript />
     <body className='app'>
       <ParticlesContainer />
       <Header/>
