@@ -1,6 +1,5 @@
-import { slugify } from "$utils/slugify";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { postsSource } from "./postsSource";
+import { slugify } from "$utils/slugify";
 
 import image1 from '$assets/images/blog/1.png';
 import image2 from '$assets/images/blog/2.png';
@@ -50,9 +49,10 @@ const imagesBindings = {
 	'posledstviya-neosnovatelnogo-obogascheniya-realnyy-primer-iz-yuridicheskoy-praktiki': image21,
 	'pochemu-bitzlato-ne-budet-blokirovat-rossiyskikh-polzovateley-v-usloviyakh-sanktsiy-ssha-i-es-protiv-rossii': image22,
 	'istoriya-iz-praktiki-pochemu-tinkoff-ne-otkryvaet-schet-i-pomozhet-li-sud': image23
-} as { [key: string]: StaticImport; }
+}
 
-export function postsTransformer() {
+export function postsTransformer()  {
+	console.log('postsTransformer');
 	const postsSourceNoPinned = postsSource.result.items.filter((item) => {
 		return !item.data.isPinned;
 	});
