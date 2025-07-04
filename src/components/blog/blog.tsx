@@ -13,7 +13,7 @@ export const Blog: FC = () => {
 			{posts.map((post) => (
 				<Link key={post.title} href={'/blog/' + post.id}>
 					<article className='max-w-32 md:max-w-52'>
-						<ImageWrapper src={noImage}  className='rounded-lg'/>
+						<ImageWrapper src={post.image || noImage}  className='rounded-lg'/>
 						<Typography as='p' className='my-2 text-gray-400'>{new Date(post.date).toLocaleString('ru')}</Typography>
 						<Typography as='h1' appearance='regular' >
 							{post.title}

@@ -10,7 +10,5 @@ interface Props {
 }
 
 export const ImageWrapper: FC<Props> = ({ src, className, width }) => {
-	return (
-		<Image src={src} alt='alt' className={cn(className)} width={width} />
-	)
+	return <Image src={src} alt='alt' className={cn(className)} width={width} />
 }
