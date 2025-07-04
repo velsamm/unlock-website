@@ -1,15 +1,13 @@
 import React, { FC } from "react";
+import Link from "next/link";
 import { posts } from "$app/blog/postsTransformer";
 import { Typography } from "$components/typography/typography";
 import { ImageWrapper } from "$components/image/image";
 import noImage from "$assets/icons/no-image.jpg";
-import Link from "next/link";
 
 export const Blog: FC = () => {
 	return (
 		<article className='flex gap-10 flex-wrap justify-items-start mt-10 rounded-2xl bg-[--background-color] p-10 shadow-2xl shadow-[--background-color]/30'>
-			<Typography as='p' className='mb-10 w-full' appearance='header'>Блог</Typography>
-
 			{posts.map((post) => (
 				<Link key={post.title} href={'/blog/' + post.id}>
 					<article className='max-w-32 md:max-w-52'>

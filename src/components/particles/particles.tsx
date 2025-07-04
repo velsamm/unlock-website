@@ -1,11 +1,10 @@
 'use client';
 
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { IParticlesProps } from '@tsparticles/react/dist/IParticlesProps';
 import { usePathname } from 'next/navigation';
-import { Container } from "@tsparticles/engine";
 
 export function ParticlesContainer() {
   const pathname = usePathname();
@@ -30,10 +29,6 @@ export function ParticlesContainer() {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded: IParticlesProps['particlesLoaded'] = useCallback(async (container?: Container) => {
-    console.log(container);
-  }, [])
 
   const options: IParticlesProps['options'] = useMemo(() => ({
     fullScreen: {
@@ -112,5 +107,5 @@ export function ParticlesContainer() {
     return null;
   }
 
-  return <Particles particlesLoaded={particlesLoaded} options={options} />;
+  return <Particles options={options} />;
 }
