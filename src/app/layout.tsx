@@ -4,9 +4,10 @@ import { Header } from "$components/Header/Header";
 import { Footer } from "$components/Footer/Footer";
 import { ParticlesContainer } from '$components/particles/particles';
 import { GTAGScript } from "$components/scripts/gtag";
+import { YAMetrics } from "$components/scripts/yametrics";
 
 export const metadata: Metadata = {
-  title: "Разблокировка аккаунтов",
+  title: "BZ Pravo | Главная | Разблокировка аккаунтов",
   description: "Разблокируем доступ к криптовалютным аккаунтам и банковским счетам",
 };
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme='dark'>
     <GTAGScript />
+    <YAMetrics />
     <body className='app'>
       <ParticlesContainer />
       <Header/>
